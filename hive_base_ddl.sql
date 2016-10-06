@@ -108,7 +108,7 @@ STORED AS TEXTFILE
  LOCATION '/user/w205/hospital_compare/Measures';
 
 DROP TABLE surveys_responses;
-CREATE EXTERNAL TABLE surverys_responses
+CREATE EXTERNAL TABLE surveys_responses
 (
        Provider_ID  INT,
        Name STRING,
