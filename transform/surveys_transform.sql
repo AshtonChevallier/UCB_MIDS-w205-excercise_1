@@ -34,4 +34,10 @@ LATERAL VIEW EXPLODE(tmp_col) exptbl AS Question, Scores;
 
 CREATE TABLE surveys as 
 select *, substr(Scores,1,1) as Numerator, substr(Scores,instr(Scores,'of')+3) as Denominator
-from surveystmp;
+from surveystmp
+where Scores <> 'Not Available';
+
+ALTER TABLE surveys
+CHANGE Scores Score int;
+
+
