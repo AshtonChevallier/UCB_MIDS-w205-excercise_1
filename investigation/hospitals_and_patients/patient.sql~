@@ -1,0 +1,18 @@
+CREATE TEMPORARY TABLE avg_survey
+AS
+SELECT 
+       Provider_ID,
+       SUM(NUMERATOR) as NUM,
+       SUM(Denominator) as DEN 
+       
+FROM surveys
+WHERE question <> 'HCAHPS_Base_Score '
+GROUP BY Provider_ID;
+
+Select 
+       Provider_ID,
+       sum(numerator)/sum(denominator) as AVG_Score
+FROM surveys
+GROUP BY PROVIDER_ID
+ORDER BY AVG_Score DESC
+limit 10;

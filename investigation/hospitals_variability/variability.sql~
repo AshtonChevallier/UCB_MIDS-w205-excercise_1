@@ -1,0 +1,7 @@
+select
+Measure_ID,
+VARIANCE(Score) as Variability
+from procedures
+group by Measure_ID
+Order by Variability DESC
+Limit 10;
