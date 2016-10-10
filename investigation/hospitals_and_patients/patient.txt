@@ -4,6 +4,10 @@
 
 Lastly, to answer the question whether average scores for hospital quality or procedural variability correlated with patient survey responses, I did a simple Pearsons correlation calculation on the entire dataset of average hospital scores against average survey response.
 
-The real trick here was to make sure we did a proper analysis on the surveys. The data dictionary wasn't very clear on what the meta score columns HCAHPS Base Score   HCAHPS Consistency Score meant. So instead, I took advantage of the fact my ER diagram forced the survey data into row format. This way I could more easily calculate the the real average survey response and compare it to the hospital score and the variability score.
+The real trick here was to make sure we did a proper analysis on the surveys. The data dictionary wasn't very clear on what the meta score columns HCAHPS Base Score   HCAHPS Consistency Score meant. So instead, I took advantage of the fact my ER diagram forced the survey data into row format. This way I could more easily calculate the the real average survey response and compare it to the hospital score. 
+
+The result of -.015 correlation seems hospital scores and survey responses aren't correlated at all. This doesn't match inuition, but it does match my exploratory analysis.
+
+There was no way to match up the Survey data to the measure variability so that part seemed implied in the prompt but is not possible, thus no code to support it.
 
 
