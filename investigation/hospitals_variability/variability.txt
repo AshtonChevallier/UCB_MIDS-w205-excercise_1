@@ -1,0 +1,1 @@
+For finding procedures with the greatest variability, I felt a simple variance calculation sufficed. I simply grouped by measure, and calculated variability. Since we have a large sample size, I don't think the calculation is misleading.
