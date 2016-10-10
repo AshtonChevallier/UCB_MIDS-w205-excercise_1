@@ -4,4 +4,4 @@ I specifically filtered out data from Emergency Room Volume. It's scores were Hi
 
 Since the scores were all over the place in terms of "best" hospital. I built 2 metrics: 1 which compared each providers score against the top scores in that area in addition to the regular average of the scores and the other is a weighted META_SCORE that takes the total sum of scores times the avg normalized score and subtracts the variance. The idea is that we don't over rate tiny hospitals that only have 1 perfect score. It penalized variability and small sample size.
 
-Thusly, I feel ordering descing on meta score is the best way to look at "best" holistically.
+Thusly, I feel ordering descing on meta score is the best way to look at "best" holistically. Run query for the answer...I missed this in the directions that you wanted it here.
