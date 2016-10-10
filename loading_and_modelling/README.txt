@@ -1,0 +1,2 @@
+
+NOTE: THIS analysis is assuming proper set up in EC2 instance under a w205 user. Additionally, the loading dataset includes the wget command command required to run the rest of the code in the shell script. However, it causes the machine to skip the other steps in my script, thus it's commented out. These commands assume you already have the files in your current directory. Or force the script to work correctly.
